@@ -52,8 +52,10 @@ function initLogin(accessLevel, JWT) {
 
     function handleJWT(payload) {
       user['jwt'] = payload['jwt'];
-      identityWindow.close();
-      identityWindow = null;
+      if (identityWindow) {
+        identityWindow.close();
+        identityWindow = null;
+      }
       resolve(user);
     }
 
