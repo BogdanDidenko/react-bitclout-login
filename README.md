@@ -4,6 +4,8 @@ This project is based on [mubashariqbal/login-with-bitclout](https://github.com/
 
 [@mubashariqbal](https://bitclout.com/u/mubashariqbal), Thanks a lot for your code!
 
+![ui](public/ui.png)
+
 ## Security
 This code is very raw and may contain vulnerabilities. I ask you to help make it better. Feel free to add issues and pull requests.
 
@@ -22,6 +24,17 @@ import BitcloutLogin from './BitcloutLogin.js'
 function App() {
   const responseClout = (response) => {
     console.log(response)
+    /**
+    {
+        "hasExtraText": false,
+        "btcDepositAddress": USER_btcDepositAddress,
+        "encryptedSeedHex": USER_encryptedSeedHex,
+        "network": "mainnet",
+        "accessLevel":  USER_accessLevel,
+        "accessLevelHmac": USER_accessLevelHmac,
+        "jwt": USER_jwt
+    }
+     * /
   }
   /**
    * https://docs.bitclout.com/devs/identity-api#access-levels
