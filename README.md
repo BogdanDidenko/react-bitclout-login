@@ -2,6 +2,9 @@
 
 This project is based on [mubashariqbal/login-with-bitclout](https://github.com/mubashariqbal/login-with-bitclout) repository. [@mubashariqbal](https://bitclout.com/u/mubashariqbal) thanks a lot for your code!
 
+## Security
+This code is very raw and may contain vulnerabilities. I ask you to help make it better. Feel free to add issues and pull requests.
+
 ## How to use
 
 ```js
@@ -39,11 +42,12 @@ export default App;
 ```
 
 In the project directory, you can run:
-
-### `yarn start` or `npm start`
+```shell
+git clone git@github.com:BogdanDidenko/react-bitclout-login.git
+cd react-bitclout-login
+npm install
+npm start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## Security
-This code is very raw and may contain vulnerabilities. I ask you to help make it better. Feel free to add issues and pull requests.
