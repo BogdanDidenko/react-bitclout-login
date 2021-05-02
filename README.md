@@ -41,7 +41,7 @@ function App() {
 export default App;
 ```
 
-In the project directory, you can run:
+Commands for run:
 ```shell
 git clone git@github.com:BogdanDidenko/react-bitclout-login.git
 cd react-bitclout-login
