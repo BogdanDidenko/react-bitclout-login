@@ -90,12 +90,6 @@ function initLogin(accessLevel, JWT) {
 }
 
 const useStyles = makeStyles((theme) => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
   button: {
     backgroundColor: '#FFFFFF',
     textTransform: 'none'
@@ -113,7 +107,6 @@ const BitcloutLogin = (props) => {
     });
 	}
 	return (
-    <div className={classes.paper}>
       <Button
         variant="contained"
         className={classes.button}
@@ -122,7 +115,6 @@ const BitcloutLogin = (props) => {
       >
         Sign in with Bitclout
       </Button>
-    </div>
   );
 }
 

@@ -7,8 +7,20 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import { makeStyles } from '@material-ui/core/styles';
+
+
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    marginTop: theme.spacing(8),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  }
+}));
 
 function App() {
+  const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [response, setResponse] = React.useState('');
   const responseClout = (response) => {
@@ -31,12 +43,14 @@ function App() {
   const JWT = true;
   return (
     <div className="App">
-      <BitcloutLogin
-        accessLevel={accessLevel}
-        onSuccess={responseClout}
-        onFailure={responseClout}
-        JWT={JWT}
-      />
+      <div className={classes.paper}>
+        <BitcloutLogin
+          accessLevel={accessLevel}
+          onSuccess={responseClout}
+          onFailure={responseClout}
+          JWT={JWT}
+        />
+      </div>
       <Dialog
         open={open}
         onClose={handleClose}
