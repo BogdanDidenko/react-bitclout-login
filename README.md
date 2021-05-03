@@ -37,13 +37,16 @@ function App() {
      * /
   }
   /**
+   * Users can control access level on a per-domain and per-account basis.
+   * Read more:
    * https://docs.bitclout.com/devs/identity-api#access-levels
   */
   const accessLevel = 4;
   /**
    * JWT requires access leve 2+
+   * Read more:
    * https://github.com/bitclout/identity/blob/main/src/app/identity.service.ts#L115
-   * https://github.com/bitclout/identity/blob/b4c4a041414778e8acb22d39afed5e7d72752178/src/types/identity.ts#L31
+   * https://github.com/bitclout/identity/blob/main/src/types/identity.ts#L31
    */
   const JWT = true;
   return (
