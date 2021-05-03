@@ -34,7 +34,7 @@ function App() {
         "accessLevelHmac": USER_accessLevelHmac,
         "jwt": USER_jwt
     }
-     * /
+    */
   }
   /**
    * Users can control access level on a per-domain and per-account basis.
