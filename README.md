@@ -9,6 +9,17 @@ This project is based on [mubashariqbal/login-with-bitclout](https://github.com/
 ## Security
 This code is very raw and may contain vulnerabilities. I ask you to help make it better. Feel free to add issues and pull requests.
 
+## Instalation
+
+#### npm install
+```shell
+npm i react-bitclout-login --save
+```
+#### yarn install
+```shell
+yarn add react-bitclout-login
+```
+
 ### JWT
 If you only want to verify Bitclout users, JWT token would be enough for this goal.
 Storing it in the database is safer than encryptedSeedHex(with high access level) because JWT can't sign Bitclout transactions. You can validate user publicKey by JWT token. See an example here:
@@ -19,7 +30,7 @@ https://docs.bitclout.com/devs/identity-api#validation-in-go
 ```js
 import './App.css';
 import React from "react";
-import BitcloutLogin from './BitcloutLogin.js'
+import BitcloutLogin from "react-bitclout-login";
 
 function App() {
   const responseClout = (response) => {
@@ -64,7 +75,7 @@ function App() {
 export default App;
 ```
 
-Commands for run:
+Repository install:
 ```shell
 git clone git@github.com:BogdanDidenko/react-bitclout-login.git
 cd react-bitclout-login

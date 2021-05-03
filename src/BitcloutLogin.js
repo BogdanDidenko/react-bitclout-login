@@ -107,14 +107,16 @@ const BitcloutLogin = (props) => {
     });
 	}
 	return (
-      <Button
-        variant="contained"
-        className={classes.button}
-        startIcon={<Icon />}
-        onClick={handleLogin}
-      >
-        Sign in with Bitclout
-      </Button>
+      <div>
+        <Button
+          variant="contained"
+          className={classes.button}
+          startIcon={<Icon />}
+          onClick={handleLogin}
+        >
+          Sign in with Bitclout
+        </Button>
+      </div>
   );
 }
 
