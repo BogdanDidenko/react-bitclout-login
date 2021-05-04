@@ -37,7 +37,7 @@ import LockOpenIcon from '@material-ui/icons/LockOpen';
 const useStyles = makeStyles((theme) => ({
   loginButton: {
     backgroundColor: '#FFFFFF',
-    textTransform: 'uppercase'
+    textTransform: 'none'
   }
 }));
 
