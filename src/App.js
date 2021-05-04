@@ -8,6 +8,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { makeStyles } from '@material-ui/core/styles';
+import LockOpenIcon from '@material-ui/icons/LockOpen';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -16,6 +17,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+  },
+  loginButton: {
+    backgroundColor: '#FFFFFF',
+    textTransform: 'uppercase'
   }
 }));
 
@@ -49,6 +54,8 @@ function App() {
           onSuccess={responseClout}
           onFailure={responseClout}
           JWT={JWT}
+          // customization={{className: classes.loginButton}}
+          // customIcon={<LockOpenIcon/>}
         />
       </div>
       <Dialog

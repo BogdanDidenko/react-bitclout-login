@@ -31,8 +31,18 @@ https://docs.bitclout.com/devs/identity-api#validation-in-go
 import './App.css';
 import React from "react";
 import BitcloutLogin from "react-bitclout-login";
+import { makeStyles } from '@material-ui/core/styles';
+import LockOpenIcon from '@material-ui/icons/LockOpen';
+
+const useStyles = makeStyles((theme) => ({
+  loginButton: {
+    backgroundColor: '#FFFFFF',
+    textTransform: 'uppercase'
+  }
+}));
 
 function App() {
+  const classes = useStyles();
   const responseClout = (response) => {
     console.log(response)
     /**
@@ -67,6 +77,8 @@ function App() {
         onSuccess={responseClout}
         onFailure={responseClout}
         JWT={JWT}
+        customization={{className: classes.loginButton}}
+        // customIcon={<LockOpenIcon/>}
       />
     </div>
   );

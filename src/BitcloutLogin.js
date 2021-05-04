@@ -98,7 +98,11 @@ const useStyles = makeStyles((theme) => ({
 
 const BitcloutLogin = (props) => {
 	const classes = useStyles();
-  const {accessLevel, onSuccess, onFailure, JWT, ...other} = props
+  const {accessLevel, onSuccess, onFailure, JWT, customization, customIcon, ...other} = props
+  var customClassName = '';
+  if (customization) {
+    customClassName =  customization.className;
+  }
 	const handleLogin = () => {
 		initLogin(accessLevel, JWT).then(e=>{
 			onSuccess(e);
@@ -110,8 +114,8 @@ const BitcloutLogin = (props) => {
       <div>
         <Button
           variant="contained"
-          className={classes.button}
-          startIcon={<Icon />}
+          className={classes.button + ' ' + customClassName}
+          startIcon={customIcon ? customIcon : <Icon />}
           onClick={handleLogin}
         >
           Sign in with Bitclout
@@ -124,6 +128,8 @@ BitcloutLogin.propTypes = {
   accessLevel: PropTypes.number.isRequired,
   onSuccess: PropTypes.func.isRequired,
   onFailure: PropTypes.func.isRequired,
-  JWT: PropTypes.bool
+  JWT: PropTypes.bool,
+  customization: PropTypes.object,
+  icon: PropTypes.element,
 }
 export default BitcloutLogin
