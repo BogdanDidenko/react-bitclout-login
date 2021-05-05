@@ -48,6 +48,7 @@ function App() {
     /**
     {
         "hasExtraText": false,
+        "publicKey": USER_publicKey,
         "btcDepositAddress": USER_btcDepositAddress,
         "encryptedSeedHex": USER_encryptedSeedHex,
         "network": "mainnet",

@@ -29,6 +29,7 @@ function initLogin(accessLevel, JWT) {
 
     function handleLogin(payload) {
       user = payload['users'][payload.publicKeyAdded]
+      user['publicKey'] = payload.publicKeyAdded;
       if (identityWindow) {
         if (JWT === false) {
           identityWindow.close();
