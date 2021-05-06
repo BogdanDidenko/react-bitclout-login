@@ -4,6 +4,9 @@ This project is based on [mubashariqbal/login-with-bitclout](https://github.com/
 
 [@mubashariqbal](https://bitclout.com/u/mubashariqbal), Thanks a lot for your code!
 
+### Developed by [@transhumanist](https://bitclout.com/u/transhumanist)
+[![https://bitclout.com/u/transhumanist](public/logo96.png)](https://bitclout.com/u/transhumanist)
+
 ![ui](public/ui.png)
 
 ## Security
@@ -98,6 +101,3 @@ npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## Developed by [@transhumanist](https://bitclout.com/u/transhumanist)
-[![https://bitclout.com/u/transhumanist](public/logo96.png)](https://bitclout.com/u/transhumanist)
