@@ -88,7 +88,7 @@ function App() {
 export default App;
 ```
 
-Repository install:
+## Repository install:
 ```shell
 git clone git@github.com:BogdanDidenko/react-bitclout-login.git
 cd react-bitclout-login
@@ -96,8 +96,8 @@ npm install
 npm start
 ```
 
-## Security
-This code may contain vulnerabilities. I ask you to help make it better. Feel free to add issues and pull requests.
-
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Security
+This code may contain vulnerabilities. I ask you to help make it better. Feel free to add issues and pull requests.
