@@ -23,7 +23,7 @@ If you only want to verify Bitclout users, JWT token would be enough for this go
 Storing it in the database is safer than encryptedSeedHex(with high access level) because JWT can't sign Bitclout transactions. You can validate user publicKey by JWT token. See an example here:
 https://docs.bitclout.com/devs/identity-api#validation-in-go
 
-#### [NEW] [Node.js JWT validation implementation](github.com/mattetre/bitclout-jwt-validate) by [@mattetre](https://bitclout.com/u/mattetre)
+#### [NEW] [Node.js JWT validation implementation](https://github.com/mattetre/bitclout-jwt-validate) by [@mattetre](https://bitclout.com/u/mattetre)
 
 ## How to use
 
