@@ -99,7 +99,11 @@ const useStyles = makeStyles((theme) => ({
 
 const BitcloutLogin = (props) => {
 	const classes = useStyles();
-  const {accessLevel, onSuccess, onFailure, JWT, customization, customIcon, ...other} = props
+  const {accessLevel, onSuccess, onFailure, JWT, customization,
+    customIcon,
+    customText,
+    CustomComponent, ...other} = props
+  const Component = CustomComponent || Button;
   var customClassName = '';
   if (customization) {
     customClassName =  customization.className;
@@ -113,14 +117,14 @@ const BitcloutLogin = (props) => {
 	}
 	return (
       <div>
-        <Button
+        <Component
           variant="contained"
           className={classes.button + ' ' + customClassName}
           startIcon={customIcon ? customIcon : <Icon />}
           onClick={handleLogin}
         >
-          Sign in with Bitclout
-        </Button>
+          {customText || "Sign in with Bitclout"}
+        </Component>
       </div>
   );
 }
